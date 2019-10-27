@@ -1,0 +1,2 @@
+This is a sample text to write
+File has been appended

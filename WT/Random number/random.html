@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Guess a number</title>
+</head>
+
+<body>
+    <p id='check'></p>
+    <p id='display'></p>
+
+    <script>
+        var num = Math.ceil(Math.random() * 10);
+        document.getElementById("check").innerHTML = num;
+        var gnum = prompt('Guess the number between 1 and 10 inclusive');
+        if (gnum == num) document.getElementById("display").innerHTML = 'Matched'; else document.getElementById("display").innerHTML = 'Not matched, the number was ' + gnum;
+    </script>
+
+</body>
+
+</html>
