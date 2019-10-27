@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christmas</title>
+</head>
+
+<body>
+    <div>
+        <input type="date" id="date">
+    </div>
+
+    <script>
+        document.getElementById("date").addEventListener("change", function () {
+            input = document.getElementById('date').value;
+            var dateEntered = new Date(input);
+            var cmas = new Date(dateEntered.getFullYear(), 11, 25);
+            if (dateEntered.getMonth() == 11 && dateEntered.getDate() > 25) {
+                cmas.setFullYear(cmas.getFullYear() + 1);
+            }
+            var one_day = 1000 * 60 * 60 * 24;
+            console.log(Math.ceil((cmas.getTime() - dateEntered.getTime()) / (one_day)) + " days left until Christmas!");
+        });
+    </script>
+</body>
+
+</html>

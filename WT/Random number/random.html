@@ -7,14 +7,14 @@
 </head>
 
 <body>
-    <p id='check'></p>
-    <p id='display'></p>
+    <p id='number'></p>
+    <p id='guess'></p>
 
     <script>
         var num = Math.ceil(Math.random() * 10);
-        document.getElementById("check").innerHTML = num;
+        document.getElementById("number").innerHTML = num;
         var gnum = prompt('Guess the number between 1 and 10 inclusive');
-        if (gnum == num) document.getElementById("display").innerHTML = 'Matched'; else document.getElementById("display").innerHTML = 'Not matched, the number was ' + gnum;
+        if (gnum == num) document.getElementById("guess").innerHTML = 'Matched'; else document.getElementById("guess").innerHTML = 'Not matched, the number was ' + gnum;
     </script>
 
 </body>
