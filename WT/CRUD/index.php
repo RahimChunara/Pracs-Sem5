@@ -13,9 +13,8 @@
     <title>Dashboard</title>
 </head>
 <body>
-        <h2 class="pull-left">Employees Details</h2>
-        <a href="create.php" class="btn btn-success pull-right">Add New Employee</a>
-        </div>
+        <h2>Employees Details</h2>
+        <a href="create.php" >Add New Employee</a>
         <?php
                     // Include config file
                     require_once "config.php";
